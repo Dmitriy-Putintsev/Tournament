@@ -14,7 +14,7 @@ class GameTest {
     private Player player4 = new Player(4, "Oleg", 25);
     private Player player5 = new Player(5, "Ilya", 24);
     private Player player6 = new Player(6, "Vasily", 19);
-    private Player player7 = new Player(7, "Petr", 34);
+    private Player player7 = new Player(7, "Andrey", 34);
     private Player player8 = new Player(8, "Evgeny", 39);
 
     @BeforeEach

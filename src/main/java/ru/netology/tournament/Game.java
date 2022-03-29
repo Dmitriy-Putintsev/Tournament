@@ -1,25 +1,21 @@
 package ru.netology.tournament;
 
-import java.util.ArrayList;
-import java.util.List;
+
+import java.util.HashMap;
+
 
 public class Game {
     //-------создание списка----------
-    private List<Player> players = new ArrayList<>();
+    private HashMap<String, Player> players = new HashMap<>();
 
     //-----------регистрируем игрока------------
     public void register(Player player) {
-        this.players.add(player);
+        this.players.put(player.getName(), player);
     }
 
     //------------ищем игрока по имени---------
     private Player findPlayer(String name) {
-        for (Player player : players) {
-            if (player.getName() == name) {
-                return player;
-            }
-        }
-        return null;
+        return players.get(name);
     }
 
     //------------ параметры метода соревнования---------
